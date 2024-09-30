@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #424242;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  max-width: 1250px; /* 원하는 최대 너비 */
+  margin: 0 auto; /* 가운데 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 내부 요소 간격 설정 */
+  background-color: white;
+  z-index: 1000;
+}
+
+.header-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* 고정 위치를 위해 다른 요소 위로 올림 */
+}
+
+.header-top2{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+
+.top-logo{
+  width: 71px;
+  height: 30px;
+  margin-right: 35px;
+  position: static;
+  transform: none;
+  display: block;
+}
+
+.top-logo-a{
+  width: 79px;
+  height: 38px;
+  border: none;
+  background: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px;
+  outline: none;
+cursor: pointer;
+}
+
+.top-logo-img{
+  width: 79px;
+  height: 38px;
+}
+
+.top-list-all{
+  display: flex;
+}
+
+.top-list{
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 15px;
+}
+
+.top-list-item{
+  border: none;
+  background: none;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 21px 5px 15px;
+  display: inline-block;
+  color: #2f3438;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.top-list-item:hover, 
+.top-list-item:active{
+  color: #35c5f0;
+}
+
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 0;
+  height: 54px;
+  width: 100%; 
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 340px;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.search-box{
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-icon{
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-input::placeholder {
+  color: #b1b1b1; 
+  opacity: 1;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 15px;
+}
+
+.icon-link {
+  margin: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.profile-img {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 글쓰기 버튼 스타일 */
+.write-btn {
+  background-color: #5cc8f0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-left: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 92px;
+  height: 40px;
+}
+
+.header-hr{
+  border: none;
+  outline: none;
+  height: 1px;
+  background-color: #b1b1b1;
+  margin-top: 0px;
+}
+
+
+.content{
+  position: relative;
+  padding: 0 0 40px;
+  flex-direction: 0 0 auto;
+  margin-top: 80px;
+  letter-spacing: -0.3px;
+  display: block;
+}
+
+.mid-content{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+
+.mid-list{
+  overflow: visible;
+  display: block;
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+}
+
+.mid-ul{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+
+.page-nav-item > a{
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: 700;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: color 0.15s ease;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.page-nav-bitem > a{
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: 700;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: color 0.15s ease;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.page-nav-item a:hover,
+.page-nav-item a:focus {
+  color: #35c5f0;
+}
+
+.page-nav-item a.active {
+  color: #35c5f0;
+}
+
+.page-nav-bitem a:hover,
+.page-nav-bitem a:focus {
+  color: #35c5f0;
+}
+
+.page-nav-bitem a.active {
+  color: #35c5f0;
+}
+
+/* 다른 메뉴를 클릭해도 기존 메뉴의 active 상태 유지 */
+.mid-list .page-nav-bitem a.active, 
+.page-nav-detail .page-nav-item a.active {
+  color: #35c5f0;
+}
+
+.mid-list .page-nav-bitem a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: url('https://i.ibb.co/znTj0fx/arrow-up.png') no-repeat center;
+  background-size: contain;
+}
+
+.page-nav-item {
+  margin-left: 30px; 
+  overflow: visible;
+  z-index: 1;
+}
+.page-nav-bitem {
+  margin-left: 30px; 
+  overflow: visible;
+  z-index: 1;
+}
+
+.page-nav-item:first-child {
+  margin-left: 0; 
+}
+
+.page-nav-bitem:first-child {
+  margin-left: 0; 
+}
+
+.page-nav-detail{
+  border-bottom: 1px solid#ededed;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.page-nav-detail {
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.deta-ul {
+  display: flex; 
+  justify-content: center; 
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.page-nav-item a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%) translateY(3px);
+  width: 70px;
+  height: 7px;
+  background-color: #35c5f0; 
+  z-index: 9999;
+}
+
+.page-nav-bitem a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%) translateY(3px);
+  width: 70px;
+  height: 7px;
+  background-color: #35c5f0; 
+  z-index: 9999;
+}
+
+.page-nav-item a {
+  position: relative; /* 부모 요소에 relative 추가 */
+}
+
+.page-nav-bitem a {
+  position: relative; /* 부모 요소에 relative 추가 */
+}

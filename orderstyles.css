@@ -9,6 +9,10 @@ body {
   font-size: 15px;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -27,6 +31,10 @@ header {
   justify-content: space-between; /* 내부 요소 간격 설정 */
   background-color: white;
   z-index: 1000;
+}
+
+.layout{
+  flex: 0 0 auto;
 }
 
 .header-top{
@@ -346,7 +354,7 @@ cursor: pointer;
   bottom: 0; 
   left: 50%;
   transform: translateX(-50%) translateY(3px);
-  width: 70px;
+  width: 96px;
   height: 7px;
   background-color: #35c5f0; 
   z-index: 9999;
@@ -370,4 +378,170 @@ cursor: pointer;
 
 .page-nav-bitem a {
   position: relative; /* 부모 요소에 relative 추가 */
+}
+
+.main-content{
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+.main-padd{
+  padding: 0 32px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1256px;
+  margin: 0px auto;
+}
+
+.main-con{
+  margin-top: 30px;
+}
+
+.order-info-1{
+  display: flex;
+  box-shadow: 0 1px 3px 0 #dbdbdb;
+  padding: 10px;
+  border-radius: 4px;
+  min-height: 60px;
+}
+
+.order-a{
+  background-color: none;
+  font: inherit;
+  display: block;
+  flex: 1 0 0px;
+  justify-content: center;
+  border: none;
+  border-right: 1px solid #dbdbdb;
+  cursor: pointer;
+  min-height: 60px;
+}
+
+.order-info1-cup{
+  border-right: none;
+  background-color: transparent;
+  background: none;
+  display: flex;
+  flex: 1 0 0px;
+  font: inherit;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  min-height: 60px;
+  border-right: 1px solid #dbdbdb;
+}
+
+.order-info1-cup-img{
+  height: 50px;
+  width: 51px;
+  display: block;
+  margin-right: 15px;
+}
+
+.order-info1-cup-text{
+  align-items: center;
+  text-align: center;
+  word-break: break-all;
+  color: #292929;
+  line-height: 18px;
+  display: flex;
+}
+
+.order-info1-cup-text-num{
+  color: #35c5f0;
+  font-weight: 700;
+  margin-left: 5px;
+  display: inline-block;
+  min-width: 30px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.order-info1-poi{
+  border-right: none;
+  background-color: transparent;
+  background: none;
+  display: flex;
+  flex: 1 0 0px;
+  font: inherit;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  min-height: 60px;
+  border-right: 1px solid #dbdbdb;
+}
+
+.order-info1-poi-img{
+  height: 35px;
+  width: 51px;
+  display: block;
+  margin-right: 15px;
+}
+
+.order-info1-poi-text{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  word-break: break-all;
+  color: #292929;
+  line-height: 18px;
+}
+
+.order-info1-poi-text-num{
+  color: #35c5f0;
+  font-weight: 700;
+  margin-left: 5px;
+  display: inline-block;
+  min-width: 30px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.order-info1-but{
+  border-right: none;
+  background-color: transparent;
+  background: none;
+  display: flex;
+  flex: 1 0 0px;
+  font: inherit;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  min-height: 60px;
+}
+
+.order-info1-but-img{
+  display: block;
+  width: 50px;
+  height: 33px;
+  margin-right: 15px;
+}
+
+.order-info1-but-text{
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  word-break: break-all;
+  color: #292929;
+  line-height: 18px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.order-info1-but-text-en{
+  color: #35c5f0;
+  font-weight: 700;
+  margin-left: 5px;
+  display: inline-block;
+  min-width: 30px;
+  line-height: 18px;
+  text-align: center;
 }
